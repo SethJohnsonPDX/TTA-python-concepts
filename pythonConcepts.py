@@ -65,7 +65,9 @@ def mathFun(amount):
         print("None of these are greater than ".format(5))
 
     tupleFun = (multiplication, x, modulus, amount)
-    print(tupleFun)
+
+    for position in tupleFun:
+        print( "Tuple value is", position)
     
 
 
