@@ -50,7 +50,7 @@ class Batchfiles:
         self.varS = StringVar()
         sourceName = filedialog.askdirectory()
         self.varS.set(sourceName)
-        ttk.Entry(self.sidenav_frame, textvariable = self.varS).grid(column = 1, row = 4)
+        ttk.Entry(self.sidenav_frame, textvariable = self.varS).grid(column = 1, row = 5)
         messagebox.showinfo(title = 'Source', message = 'Source has been selected.')
         
 
@@ -58,7 +58,7 @@ class Batchfiles:
         self.varD = StringVar()
         desName = filedialog.askdirectory()
         self.varD.set(desName)
-        ttk.Entry(self.sidenav_frame, textvariable = self.varD).grid(column = 1, row = 5)
+        ttk.Entry(self.sidenav_frame, textvariable = self.varD).grid(column = 1, row = 6)
         messagebox.showinfo(title = 'Destination', message = 'Destination has been selected.')
 
     def batch_files(self):
